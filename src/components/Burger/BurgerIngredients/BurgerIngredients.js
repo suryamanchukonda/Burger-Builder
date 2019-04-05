@@ -5,7 +5,7 @@ import classes from './BurgerIngredient.css';
 class BurgerIngredient extends Component {
     render() {
         let ingredient = null;
-
+    // checking the ingredient types choosen and adding it to the Burger
     switch (this.props.type) {
         case ('bread-bottom'):
             ingredient = <div className = { classes.BreadBottom }></div>;
@@ -40,6 +40,8 @@ class BurgerIngredient extends Component {
     }
 } ;
 
+
+// validation if the type is entered.
 BurgerIngredient.propTypes = {
     type: propTypes.string.isRequired
 }
